@@ -21,6 +21,7 @@ public class Main extends Application {
         BorderPane pane = new BorderPane();
         GridPane gPane = new GridPane();
         GameMap map = new GameMap();
+        Creature PacMan = new PacMan();
         System.out.println(Arrays.deepToString(map.accessMapArray()));
         gPane.setGridLinesVisible(true);
         for (int i=0; i<27;i++) {
@@ -29,11 +30,14 @@ public class Main extends Application {
                     gPane.add(new Rectangle(20, 20, Color.BLUE), j, i);
                 }
                 else if (map.accessMapArray()[i][j].getDot()) {
-                    gPane.add(new Circle(20, 20, 5, Color.YELLOW), j, i);
+                    gPane.add(new Circle(5, Color.WHITE), j, i);
+                }
+                else if (map.accessMapArray()[i][j].getStarterArea()) {
+                    gPane.add(PacMan, j, i);
                 }
             }
         }
-        pane.setStyle("-fx-background-color: blue");
+        pane.setStyle("-fx-background-color: black;");
         gPane.setGridLinesVisible(true);
         System.out.println(gPane.isGridLinesVisible());
 

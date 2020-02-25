@@ -1,5 +1,7 @@
 package sample;
 
-public class Creature {
+import javafx.scene.shape.Circle;
+
+public class Creature extends Circle {
 
 }

@@ -36,8 +36,4 @@ public class GameMap {
     public MapCell[][] accessMapArray() {
         return cellArray;
     }
-
-    public boolean isPassable(MapCell m) {
-        return m.passable;
-    }
 }
