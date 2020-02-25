@@ -2,6 +2,7 @@ package sample;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class GameMap {
@@ -15,18 +16,20 @@ public class GameMap {
     }
 
     private MapCell[][] generateMapArray() throws FileNotFoundException {
-        Scanner scanner = new Scanner(new File("map.txt"));
+        Scanner scanner = new Scanner(new File("src/sample/map.txt"));
         MapCell[][] cellArray = new MapCell[27][21];
+        String[][] test = new String[27][21];
         int row = 0;
         while (scanner.hasNextLine()) {
-            int column = 0;
-            while (scanner.hasNext()) {
-                String s = scanner.next();
-                cellArray[row][column] = new MapCell(s);
-                column++;
+            for (int i=0; i<cellArray.length; i++) {
+                String[] line = scanner.nextLine().trim().split(" ");
+                for (int j=0; j<line.length; j++) {
+                    cellArray[i][j] = new MapCell(line[j]);
+                    test[i][j] = line[j];
+                }
             }
-            row++;
         }
+        System.out.println(Arrays.deepToString(test));
         return cellArray;
     }
 

@@ -6,10 +6,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
 import java.io.File;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main extends Application {
@@ -18,6 +21,7 @@ public class Main extends Application {
         BorderPane pane = new BorderPane();
         GridPane gPane = new GridPane();
         GameMap map = new GameMap();
+        System.out.println(Arrays.deepToString(map.accessMapArray()));
         gPane.setGridLinesVisible(true);
         for(int i=0; i<=GameMap.cellArray.length(); i++ ) {
 
