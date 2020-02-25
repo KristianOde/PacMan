@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/ant.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +69,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1YDLKP9kNosuQittPlx1gmFVoBC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -169,6 +174,9 @@
       </method>
     </configuration>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
@@ -192,21 +200,25 @@
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="425" y="346" key="FileDocumentManager.FileCacheConflict/0.0.1500.970@0.0.1500.970" timestamp="1582618551926" />
-    <state width="1480" height="52" key="GridCell.Tab.0.bottom" timestamp="1582628184989">
-      <screen x="0" y="0" width="1500" height="970" />
+    <state width="1323" height="88" key="GridCell.Tab.0.bottom" timestamp="1582631003314">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="88" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582631003314" />
     <state width="1480" height="52" key="GridCell.Tab.0.bottom/0.0.1500.970@0.0.1500.970" timestamp="1582628184989" />
-    <state width="1480" height="52" key="GridCell.Tab.0.center" timestamp="1582628184989">
-      <screen x="0" y="0" width="1500" height="970" />
+    <state width="1323" height="88" key="GridCell.Tab.0.center" timestamp="1582631003313">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="88" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582631003313" />
     <state width="1480" height="52" key="GridCell.Tab.0.center/0.0.1500.970@0.0.1500.970" timestamp="1582628184989" />
-    <state width="1480" height="52" key="GridCell.Tab.0.left" timestamp="1582628184989">
-      <screen x="0" y="0" width="1500" height="970" />
+    <state width="1323" height="88" key="GridCell.Tab.0.left" timestamp="1582631003313">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="88" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582631003313" />
     <state width="1480" height="52" key="GridCell.Tab.0.left/0.0.1500.970@0.0.1500.970" timestamp="1582628184989" />
-    <state width="1480" height="52" key="GridCell.Tab.0.right" timestamp="1582628184989">
-      <screen x="0" y="0" width="1500" height="970" />
+    <state width="1323" height="88" key="GridCell.Tab.0.right" timestamp="1582631003314">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="88" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582631003314" />
     <state width="1480" height="52" key="GridCell.Tab.0.right/0.0.1500.970@0.0.1500.970" timestamp="1582628184989" />
     <state x="269" y="120" key="SettingsEditor" timestamp="1582627439318">
       <screen x="0" y="0" width="1500" height="970" />
@@ -230,14 +242,10 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/sample/Main.java</url>
-          <line>13</line>
+          <line>14</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
   </component>
 </project>
