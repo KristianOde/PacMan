@@ -89,7 +89,12 @@
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -114,6 +119,14 @@
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="PacMan" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
@@ -168,6 +181,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -192,22 +210,22 @@
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="425" y="346" key="FileDocumentManager.FileCacheConflict/0.0.1500.970@0.0.1500.970" timestamp="1582618551926" />
-    <state width="1480" height="52" key="GridCell.Tab.0.bottom" timestamp="1582628184989">
+    <state width="1480" height="52" key="GridCell.Tab.0.bottom" timestamp="1582631424509">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
-    <state width="1480" height="52" key="GridCell.Tab.0.bottom/0.0.1500.970@0.0.1500.970" timestamp="1582628184989" />
-    <state width="1480" height="52" key="GridCell.Tab.0.center" timestamp="1582628184989">
+    <state width="1480" height="52" key="GridCell.Tab.0.bottom/0.0.1500.970@0.0.1500.970" timestamp="1582631424509" />
+    <state width="1480" height="52" key="GridCell.Tab.0.center" timestamp="1582631424508">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
-    <state width="1480" height="52" key="GridCell.Tab.0.center/0.0.1500.970@0.0.1500.970" timestamp="1582628184989" />
-    <state width="1480" height="52" key="GridCell.Tab.0.left" timestamp="1582628184989">
+    <state width="1480" height="52" key="GridCell.Tab.0.center/0.0.1500.970@0.0.1500.970" timestamp="1582631424508" />
+    <state width="1480" height="52" key="GridCell.Tab.0.left" timestamp="1582631424508">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
-    <state width="1480" height="52" key="GridCell.Tab.0.left/0.0.1500.970@0.0.1500.970" timestamp="1582628184989" />
-    <state width="1480" height="52" key="GridCell.Tab.0.right" timestamp="1582628184989">
+    <state width="1480" height="52" key="GridCell.Tab.0.left/0.0.1500.970@0.0.1500.970" timestamp="1582631424508" />
+    <state width="1480" height="52" key="GridCell.Tab.0.right" timestamp="1582631424509">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
-    <state width="1480" height="52" key="GridCell.Tab.0.right/0.0.1500.970@0.0.1500.970" timestamp="1582628184989" />
+    <state width="1480" height="52" key="GridCell.Tab.0.right/0.0.1500.970@0.0.1500.970" timestamp="1582631424509" />
     <state x="269" y="120" key="SettingsEditor" timestamp="1582627439318">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
@@ -224,17 +242,6 @@
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="390" y="193" key="new project wizard/0.0.1500.970@0.0.1500.970" timestamp="1582622823684" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sample/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
