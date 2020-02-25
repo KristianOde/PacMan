@@ -74,16 +74,20 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="OverrideImplement.combined" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="recentsLimit" value="5" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -188,22 +192,26 @@
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="425" y="346" key="FileDocumentManager.FileCacheConflict/0.0.1500.970@0.0.1500.970" timestamp="1582618551926" />
-    <state width="1366" height="243" key="GridCell.Tab.0.bottom" timestamp="1582623498932">
+    <state width="1366" height="243" key="GridCell.Tab.0.bottom" timestamp="1582626058689">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
-    <state width="1366" height="243" key="GridCell.Tab.0.bottom/0.0.1500.970@0.0.1500.970" timestamp="1582623498932" />
-    <state width="1366" height="243" key="GridCell.Tab.0.center" timestamp="1582623498932">
+    <state width="1366" height="243" key="GridCell.Tab.0.bottom/0.0.1500.970@0.0.1500.970" timestamp="1582626058689" />
+    <state width="1366" height="243" key="GridCell.Tab.0.center" timestamp="1582626058689">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
-    <state width="1366" height="243" key="GridCell.Tab.0.center/0.0.1500.970@0.0.1500.970" timestamp="1582623498932" />
-    <state width="1366" height="243" key="GridCell.Tab.0.left" timestamp="1582623498932">
+    <state width="1366" height="243" key="GridCell.Tab.0.center/0.0.1500.970@0.0.1500.970" timestamp="1582626058689" />
+    <state width="1366" height="243" key="GridCell.Tab.0.left" timestamp="1582626058689">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
-    <state width="1366" height="243" key="GridCell.Tab.0.left/0.0.1500.970@0.0.1500.970" timestamp="1582623498932" />
-    <state width="1366" height="243" key="GridCell.Tab.0.right" timestamp="1582623498932">
+    <state width="1366" height="243" key="GridCell.Tab.0.left/0.0.1500.970@0.0.1500.970" timestamp="1582626058689" />
+    <state width="1366" height="243" key="GridCell.Tab.0.right" timestamp="1582626058689">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
-    <state width="1366" height="243" key="GridCell.Tab.0.right/0.0.1500.970@0.0.1500.970" timestamp="1582623498932" />
+    <state width="1366" height="243" key="GridCell.Tab.0.right/0.0.1500.970@0.0.1500.970" timestamp="1582626058689" />
+    <state x="269" y="120" key="SettingsEditor" timestamp="1582625343803">
+      <screen x="0" y="0" width="1500" height="970" />
+    </state>
+    <state x="269" y="120" key="SettingsEditor/0.0.1500.970@0.0.1500.970" timestamp="1582625343803" />
     <state x="472" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1582616797781">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
@@ -216,6 +224,17 @@
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="390" y="193" key="new project wizard/0.0.1500.970@0.0.1500.970" timestamp="1582622823684" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sample/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

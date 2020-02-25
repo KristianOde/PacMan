@@ -11,12 +11,20 @@ public class GameMap {
             int column = 0;
             while (scanner.hasNext()) {
                 String s = scanner.next();
-                if (s == "x")
-                    cellArray[row][column] = new UnpassableCell();
-                else if (s == "o" || s == "y")
-                    cellArray[row][column] = new DotCell();
-                else if (s == "e")
-                    cellArray[row][column] = new
+                switch (s) {
+                    case "x":
+                        cellArray[row][column] = new UnpassableCell();
+                        break;
+                    case "o":
+                    case "y":
+                        cellArray[row][column] = new DotCell();
+                        break;
+                    case "e":
+                        cellArray[row][column] = new EmptyCell();
+                        break;
+                }
+                column++;
+
             }
             row++;
         }
