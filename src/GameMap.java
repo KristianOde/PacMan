@@ -11,7 +11,6 @@ public class GameMap {
             e.printStackTrace();
         }
     }
-    cellArray[row][column].setDotFalse();
 
     private MapCell[][] generateMapArray() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File("map.txt"));
