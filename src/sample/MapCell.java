@@ -1,3 +1,5 @@
+package sample;
+
 public class MapCell {
     boolean passable, dot, bigDot, starterArea;
     public MapCell () {

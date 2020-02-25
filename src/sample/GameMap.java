@@ -1,18 +1,18 @@
+package sample;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class GameMap {
-    MapCell[][] cellArray;
-    {
+    private MapCell[][] cellArray;
+    public GameMap() {
         try {
             cellArray = generateMapArray();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
     }
-
-
 
     private MapCell[][] generateMapArray() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File("map.txt"));
@@ -27,6 +27,10 @@ public class GameMap {
             }
             row++;
         }
+        return cellArray;
+    }
+
+    public MapCell[][] accessMapArray() {
         return cellArray;
     }
 
