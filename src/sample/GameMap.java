@@ -15,7 +15,7 @@ public class GameMap {
     }
 
     private MapCell[][] generateMapArray() throws FileNotFoundException {
-        Scanner scanner = new Scanner(new File("map.txt"));
+        Scanner scanner = new Scanner(new File("src/sample/map.txt"));
         MapCell[][] cellArray = new MapCell[27][21];
         int row = 0;
         while (scanner.hasNextLine()) {
@@ -34,4 +34,7 @@ public class GameMap {
         return cellArray;
     }
 
+    public boolean isPassable(MapCell m) {
+        return m.passable;
+    }
 }
