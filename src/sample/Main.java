@@ -23,15 +23,21 @@ public class Main extends Application {
         GameMap map = new GameMap();
         System.out.println(Arrays.deepToString(map.accessMapArray()));
         gPane.setGridLinesVisible(true);
-        for(int i=0; i<=GameMap.cellArray.length(); i++ ) {
-
+        for (int i=0; i<27;i++) {
+            for (int j=0; j<21; j++) {
+                if (!map.accessMapArray()[i][j].getPassable()) {
+                    gPane.add(new Rectangle(20, 20, Color.BLUE), j, i);
+                }
+                else if (map.accessMapArray()[i][j].getDot()) {
+                    gPane.add(new Circle(20, 20, 5, Color.YELLOW), j, i);
+                }
+            }
         }
-        gPane.add(new Circle(50, 50, 50), 0, 0);
         System.out.println(gPane.isGridLinesVisible());
 
         pane.setCenter(gPane);
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        Scene scene = new Scene(pane, 600, 600);
+        Scene scene = new Scene(pane);
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(scene);
         primaryStage.show();
