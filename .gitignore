@@ -28,3 +28,6 @@ hs_err_pid*
 /.idea/*
 /out/*
 .idea/workspace.xml
+.idea/workspace.xml
+.idea/ant.xml
+.idea/vcs.xml
