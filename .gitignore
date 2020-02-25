@@ -23,5 +23,7 @@
 hs_err_pid*
 
 # etc
-./idea
-./out/*
+.idea/
+.idea/*
+*/.idea/
+*/out/*

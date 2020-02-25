@@ -26,7 +26,11 @@ public class MapCell {
                 starterArea = true;
                 break;
         }
-
     }
+
+    public void setDotFalse() {
+        this.dot = false;
+    }
+
 
 }
