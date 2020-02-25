@@ -33,6 +33,8 @@ public class Main extends Application {
                 }
             }
         }
+        pane.setStyle("-fx-background-color: blue");
+        gPane.setGridLinesVisible(true);
         System.out.println(gPane.isGridLinesVisible());
 
         pane.setCenter(gPane);

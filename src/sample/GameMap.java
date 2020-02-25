@@ -37,4 +37,7 @@ public class GameMap {
         return cellArray;
     }
 
+    public boolean isPassable(MapCell m) {
+        return m.passable;
+    }
 }
