@@ -3,13 +3,14 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class GameMap {
-    MapCell[][] cellArray;
-    {
+    private MapCell[][] mapCells;
+    public GameMap() {
         try {
             cellArray = generateMapArray();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
     }
 
     private MapCell[][] generateMapArray() throws FileNotFoundException {
