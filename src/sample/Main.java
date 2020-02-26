@@ -16,14 +16,24 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main extends Application {
+    BorderPane pane = new BorderPane();
+    GridPane gPane = new GridPane();
+    GameMap map = new GameMap();
+    Creature PacMan = new PacMan();
     @Override
     public void start(Stage primaryStage) throws Exception {
-        BorderPane pane = new BorderPane();
-        GridPane gPane = new GridPane();
-        GameMap map = new GameMap();
-        Creature PacMan = new PacMan();
         System.out.println(Arrays.deepToString(map.accessMapArray()));
-        gPane.setGridLinesVisible(true);
+        initializeGame();
+        pane.setStyle("-fx-background-color: black;");
+        pane.setCenter(gPane);
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Scene scene = new Scene(pane);
+        primaryStage.setTitle("Hello World");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    public void initializeGame() {
         for (int i=0; i<27;i++) {
             for (int j=0; j<21; j++) {
                 if (!map.accessMapArray()[i][j].getPassable()) {
@@ -40,14 +50,6 @@ public class Main extends Application {
                 }
             }
         }
-        pane.setStyle("-fx-background-color: black;");
-
-        pane.setCenter(gPane);
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        Scene scene = new Scene(pane);
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(scene);
-        primaryStage.show();
     }
 
 
