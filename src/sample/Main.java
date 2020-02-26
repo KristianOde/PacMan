@@ -58,22 +58,25 @@ public class Main extends Application {
                     wall.setX(j*GRIDSIZE);
                     wall.setY(i*GRIDSIZE);
                     pane.getChildren().add(wall);
-                }/*
+                }
                 else if (map.accessMapArray()[i][j].getBigDot()) {
                     Dot bigDot = new Dot(true);
-                    pane.add(bigDot, j, i);
-                    GridPane.setHalignment(bigDot, HPos.CENTER);
+                    bigDot.setCenterX((j*GRIDSIZE)+GRIDSIZE/2);
+                    bigDot.setCenterY((i*GRIDSIZE)+GRIDSIZE/2);
+                    pane.getChildren().add(bigDot);
                 }
                 else if (map.accessMapArray()[i][j].getDot()) {
                     Dot dot = new Dot(false);
-                    pane.add(dot, j, i);
-                    GridPane.setHalignment(dot, HPos.CENTER);
+                    dot.setCenterX((j*GRIDSIZE)+GRIDSIZE/2);
+                    dot.setCenterY((i*GRIDSIZE)+GRIDSIZE/2);
+                    pane.getChildren().add(dot);
                 }
                 else if (map.accessMapArray()[i][j].getStarterArea()) {
                     pacMan.setXY(j, i);
-                    pane.add(pacMan, pacMan.getX(), pacMan.getY());
-                    GridPane.setHalignment(pacMan, HPos.CENTER);
-                }*/
+                    pacMan.setCenterX((j*GRIDSIZE)+GRIDSIZE/2);
+                    pacMan.setCenterY((i*GRIDSIZE)+GRIDSIZE/2);
+                    pane.getChildren().add(pacMan);
+                }
             }
         }
     }
