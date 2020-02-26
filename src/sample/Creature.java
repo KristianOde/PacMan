@@ -37,13 +37,13 @@ public class Creature extends Arc {
         /* Warping mechanic: if you reach the end of the map
          * you warp to the opposite side
          */
-        if(getCenterX() > 21*20/*GRIDSIZE*/) {
+        if(getCenterX() > 21*20/*20=GRIDSIZE*/) {
             this.setCenterX(0);
-        }else if(getCenterX() < 0 /*GRIDSIZE*/) {
+        }else if(getCenterX() < 0 /*20=GRIDSIZE*/) {
             this.setCenterX(21*20);
-        }else if(getCenterY() > 27*20/*GRIDSIZE*/){
+        }else if(getCenterY() > 27*20/*20=GRIDSIZE*/){
             this.setCenterY(0);
-        }else if(getCenterY() < 0/*GRIDSIZE*/){
+        }else if(getCenterY() < 0/*20=GRIDSIZE*/){
             this.setCenterY(27*20);
         }
 
