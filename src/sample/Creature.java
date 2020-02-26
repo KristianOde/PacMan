@@ -2,16 +2,17 @@ package sample;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.scene.shape.Arc;
 import javafx.scene.shape.Circle;
 import javafx.util.Duration;
 
-public class Creature extends Circle {
+public class Creature extends Arc {
     protected int x, y;
     protected Direction dir;
     protected Timeline animation;
 
     public Creature() {
-        animation = new Timeline(new KeyFrame(Duration.millis(5), e -> move()));
+        animation = new Timeline(new KeyFrame(Duration.millis(10), e -> move()));
         animation.setCycleCount(Timeline.INDEFINITE);
         animation.play(); // Start animation
     }
