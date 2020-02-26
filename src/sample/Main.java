@@ -28,8 +28,10 @@ public class Main extends Application {
         pane.setCenter(gPane);
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         Scene scene = new Scene(pane);
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("PacMan");
         primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
+        primaryStage.sizeToScene();
         primaryStage.show();
     }
 
