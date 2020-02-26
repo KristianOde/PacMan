@@ -27,6 +27,7 @@ public class Main extends Application {
         System.out.println(Arrays.deepToString(map.accessMapArray()));
         bPane.setStyle("-fx-background-color: black;");
         bPane.setCenter(pane);
+        initializeGame();
         System.out.println(gridRows + " " + gridColumns);
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         /*pane.setOnKeyPressed(e -> {
@@ -50,8 +51,8 @@ public class Main extends Application {
     }
 
     public void initializeGame() {
-        for (int i=0; i<27;i++) {
-            for (int j=0; j<21; j++) {
+        for (int i=0; i<gridRows;i++) {
+            for (int j=0; j<gridColumns; j++) {
                 if (!map.accessMapArray()[i][j].getPassable()) {
                     Wall wall = new Wall();
                     wall.setX(j*GRIDSIZE);
@@ -76,7 +77,7 @@ public class Main extends Application {
             }
         }
     }
-    
+
     public static void main(String[] args) {
         launch(args);
     }
