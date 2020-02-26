@@ -34,9 +34,16 @@ public class Creature extends Arc {
         return dir;
     }
     public void move() {
-        if(getCenterX() > 27*20/*GRIDSIZE*/) {
+        if(getCenterX() > 21*20/*GRIDSIZE*/) {
             this.setCenterX(0);
+        }else if(getCenterX() < 0 /*GRIDSIZE*/) {
+            this.setCenterX(21*20);
+        }else if(getCenterY() > 27*20/*GRIDSIZE*/){
+            this.setCenterY(0);
+        }else if(getCenterY() < 0/*GRIDSIZE*/){
+            this.setCenterY(27*20);
         }
+
         if (this.getDirection() == Direction.LEFT) {
             this.setCenterX(this.getCenterX() - 1);
         }else if (this.getDirection() == Direction.RIGHT) {
