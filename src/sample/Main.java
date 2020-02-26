@@ -2,6 +2,7 @@ package sample;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.HPos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
@@ -42,14 +43,19 @@ public class Main extends Application {
                     gPane.add(new EmptySpace(), j, i);
                 }
                 else if (map.accessMapArray()[i][j].getBigDot()) {
-                    gPane.add(new Dot(true), j, i);
+                    Dot bigDot = new Dot(true);
+                    gPane.add(bigDot, j, i);
+                    gPane.setHalignment(bigDot, HPos.CENTER);
                 }
                 else if (map.accessMapArray()[i][j].getDot()) {
-                    gPane.add(new Dot(false), j, i);
+                    Dot dot = new Dot(false);
+                    gPane.add(dot, j, i);
+                    gPane.setHalignment(dot, HPos.CENTER);
                 }
                 else if (map.accessMapArray()[i][j].getStarterArea()) {
                     pacMan.setXY(j, i);
                     gPane.add(pacMan, pacMan.getX(), pacMan.getY());
+                    gPane.setHalignment(pacMan, HPos.CENTER);
                 }
             }
         }
