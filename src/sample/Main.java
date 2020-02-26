@@ -1,9 +1,7 @@
 package sample;
 
 import javafx.application.Application;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.geometry.HPos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -22,12 +20,14 @@ public class Main extends Application {
     Pane pane = new Pane();
     GameMap map = new GameMap();
     Creature pacMan = new PacMan();
+    int gridRows = map.accessMapArray().length;
+    int gridColumns = map.accessMapArray()[0].length;
     @Override
     public void start(Stage primaryStage) throws Exception {
         System.out.println(Arrays.deepToString(map.accessMapArray()));
-        initializeGame();
         bPane.setStyle("-fx-background-color: black;");
         bPane.setCenter(pane);
+        System.out.println(gridRows + " " + gridColumns);
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         /*pane.setOnKeyPressed(e -> {
             switch (e.getCode()) {
@@ -79,23 +79,7 @@ public class Main extends Application {
             }
         }
     }
-
-    public Node getNodeByRowColumnIndex (final int row, final int column, GridPane gridPane) {
-        Node result = null;
-        ObservableList<Node> childrens = gridPane.getChildren();
-
-        for (Node node : childrens) {
-            if(GridPane.getRowIndex(node) == row && GridPane.getColumnIndex(node) == column) {
-                result = node;
-                break;
-            }
-        }
-
-        return result;
-    }
-
-
-
+    
     public static void main(String[] args) {
         launch(args);
     }
