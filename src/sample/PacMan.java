@@ -14,6 +14,7 @@ public class PacMan extends Creature {
         setRadiusY(10);
         setStartAngle(40);
         setLength(280);
+        setStroke(Color.BLACK);
         setFill(Color.YELLOW);
     }
 
