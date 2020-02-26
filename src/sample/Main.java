@@ -30,24 +30,35 @@ public class Main extends Application {
         initializeGame();
         System.out.println(gridRows + " " + gridColumns);
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        /*pane.setOnKeyPressed(e -> {
+        pane.setOnKeyPressed(e -> {
             switch (e.getCode()) {
                 case LEFT:
-                    //Node node = getNodeByRowColumnIndex(pacMan.getY(), pacMan.getX(), pane);
-                    pacMan.setXY(pacMan.getX()-1, pacMan.getY());
+                    pacMan.setDirection(Direction.LEFT);
+                    System.out.println(pacMan.getDirection());
                     break;
                 case RIGHT:
-                    pane.add(pacMan, pacMan.getX()+1, pacMan.getY());
+                    pacMan.setDirection(Direction.RIGHT);
+                    System.out.println(pacMan.getDirection());
+                    break;
+                case DOWN:
+                    pacMan.setDirection(Direction.DOWN);
+                    System.out.println(pacMan.getDirection());
+                    break;
+                case UP:
+                    pacMan.setDirection(Direction.UP);
+                    System.out.println(pacMan.getDirection());
                     break;
             }
-        });*/
-
+            pacMan.move();
+        });
         Scene scene = new Scene(bPane);
+        System.out.println(pacMan.getDirection());
         primaryStage.setTitle("PacMan");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.sizeToScene();
         primaryStage.show();
+        pane.requestFocus();
     }
 
     public void initializeGame() {
