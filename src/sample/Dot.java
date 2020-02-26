@@ -5,15 +5,16 @@ import javafx.scene.shape.Circle;
 
 public class Dot extends Circle {
     private int score;
+    private double radius = 3.5;
 
     public Dot(Boolean big) {
         if (!big) {
             score = 100;
-            setRadius(5);
+            setRadius(radius);
         }
         else {
             score = 500;
-            setRadius(8);
+            setRadius(radius*2);
         }
         setFill(Color.WHITE);
     }

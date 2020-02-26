@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.geometry.HPos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
@@ -36,8 +37,10 @@ public class Main extends Application {
             }
         });
         Scene scene = new Scene(pane);
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("PacMan");
         primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
+        primaryStage.sizeToScene();
         primaryStage.show();
     }
 
@@ -48,14 +51,19 @@ public class Main extends Application {
                     gPane.add(new Wall(), j, i);
                 }
                 else if (map.accessMapArray()[i][j].getBigDot()) {
-                    gPane.add(new Dot(true), j, i);
+                    Dot bigDot = new Dot(true);
+                    gPane.add(bigDot, j, i);
+                    GridPane.setHalignment(bigDot, HPos.CENTER);
                 }
                 else if (map.accessMapArray()[i][j].getDot()) {
-                    gPane.add(new Dot(false), j, i);
+                    Dot dot = new Dot(false);
+                    gPane.add(dot, j, i);
+                    GridPane.setHalignment(dot, HPos.CENTER);
                 }
                 else if (map.accessMapArray()[i][j].getStarterArea()) {
                     pacMan.setXY(j, i);
                     gPane.add(pacMan, pacMan.getX(), pacMan.getY());
+                    GridPane.setHalignment(pacMan, HPos.CENTER);
                 }
             }
         }
