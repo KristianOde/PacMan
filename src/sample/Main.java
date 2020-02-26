@@ -37,7 +37,7 @@ public class Main extends Application {
         for (int i=0; i<27;i++) {
             for (int j=0; j<21; j++) {
                 if (!map.accessMapArray()[i][j].getPassable()) {
-                    gPane.add(new Rectangle(20, 20, Color.BLUE), j, i);
+                    gPane.add(new EmptySpace(), j, i);
                 }
                 else if (map.accessMapArray()[i][j].getBigDot()) {
                     gPane.add(new Dot(true), j, i);
