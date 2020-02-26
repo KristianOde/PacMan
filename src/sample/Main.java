@@ -11,11 +11,13 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
 import java.util.Arrays;
 
 public class Main extends Application {
+    final int GRIDSIZE = 20;
     BorderPane bPane = new BorderPane();
     Pane pane = new Pane();
     GameMap map = new GameMap();
@@ -51,8 +53,11 @@ public class Main extends Application {
         for (int i=0; i<27;i++) {
             for (int j=0; j<21; j++) {
                 if (!map.accessMapArray()[i][j].getPassable()) {
-                    pane.add(new Wall(), j, i);
-                }
+                    Wall wall = new Wall();
+                    wall.setX(j*GRIDSIZE);
+                    wall.setY(i*GRIDSIZE);
+                    pane.getChildren().add(wall);
+                }/*
                 else if (map.accessMapArray()[i][j].getBigDot()) {
                     Dot bigDot = new Dot(true);
                     pane.add(bigDot, j, i);
@@ -67,7 +72,7 @@ public class Main extends Application {
                     pacMan.setXY(j, i);
                     pane.add(pacMan, pacMan.getX(), pacMan.getY());
                     GridPane.setHalignment(pacMan, HPos.CENTER);
-                }
+                }*/
             }
         }
     }
