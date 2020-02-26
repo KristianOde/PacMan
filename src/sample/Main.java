@@ -19,7 +19,7 @@ public class Main extends Application {
     BorderPane pane = new BorderPane();
     GridPane gPane = new GridPane();
     GameMap map = new GameMap();
-    Creature PacMan = new PacMan();
+    Creature pacMan = new PacMan();
     @Override
     public void start(Stage primaryStage) throws Exception {
         System.out.println(Arrays.deepToString(map.accessMapArray()));
@@ -40,13 +40,13 @@ public class Main extends Application {
                     gPane.add(new Rectangle(20, 20, Color.BLUE), j, i);
                 }
                 else if (map.accessMapArray()[i][j].getBigDot()) {
-                    gPane.add(new Circle(8.5, Color.WHITE), j, i);
+                    gPane.add(new Dot(true), j, i);
                 }
                 else if (map.accessMapArray()[i][j].getDot()) {
-                    gPane.add(new Circle(5, Color.WHITE), j, i);
+                    gPane.add(new Dot(false), j, i);
                 }
                 else if (map.accessMapArray()[i][j].getStarterArea()) {
-                    gPane.add(PacMan, j, i);
+                    gPane.add(pacMan, j, i);
                 }
             }
         }

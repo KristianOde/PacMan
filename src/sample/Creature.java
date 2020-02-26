@@ -4,7 +4,5 @@ import javafx.scene.shape.Circle;
 
 public class Creature extends Circle {
     public Creature() {}
-
-
 }
 
