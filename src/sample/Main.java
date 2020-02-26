@@ -33,19 +33,27 @@ public class Main extends Application {
         pane.setOnKeyPressed(e -> {
             switch (e.getCode()) {
                 case LEFT:
+                case A:
                     pacMan.setDirection(Direction.LEFT);
+                    pacMan.setStartAngle(220);
                     System.out.println(pacMan.getDirection());
                     break;
                 case RIGHT:
+                case D:
                     pacMan.setDirection(Direction.RIGHT);
+                    pacMan.setStartAngle(40);
                     System.out.println(pacMan.getDirection());
                     break;
                 case DOWN:
+                case S:
                     pacMan.setDirection(Direction.DOWN);
+                    pacMan.setStartAngle(310);
                     System.out.println(pacMan.getDirection());
                     break;
                 case UP:
+                case W:
                     pacMan.setDirection(Direction.UP);
+                    pacMan.setStartAngle(130);
                     System.out.println(pacMan.getDirection());
                     break;
             }
