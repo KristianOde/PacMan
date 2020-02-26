@@ -94,10 +94,10 @@ public class Main extends Application {
                     pacMan.setXY(j, i);
                     pacMan.setCenterX((j*GRIDSIZE)+GRIDSIZE/2);
                     pacMan.setCenterY((i*GRIDSIZE)+GRIDSIZE/2);
-                    pane.getChildren().add(pacMan);
                 }
             }
         }
+        pane.getChildren().add(pacMan);
     }
 
     public static void main(String[] args) {
