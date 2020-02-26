@@ -29,6 +29,9 @@ public class Main extends Application {
                 if (!map.accessMapArray()[i][j].getPassable()) {
                     gPane.add(new Rectangle(20, 20, Color.BLUE), j, i);
                 }
+                else if (map.accessMapArray()[i][j].getBigDot()) {
+                    gPane.add(new Circle(8.5, Color.WHITE), j, i);
+                }
                 else if (map.accessMapArray()[i][j].getDot()) {
                     gPane.add(new Circle(5, Color.WHITE), j, i);
                 }
@@ -38,8 +41,6 @@ public class Main extends Application {
             }
         }
         pane.setStyle("-fx-background-color: black;");
-        gPane.setGridLinesVisible(true);
-        System.out.println(gPane.isGridLinesVisible());
 
         pane.setCenter(gPane);
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));

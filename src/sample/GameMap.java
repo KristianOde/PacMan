@@ -7,6 +7,10 @@ import java.util.Scanner;
 
 public class GameMap {
     private MapCell[][] cellArray;
+    /** Konstruktøren for GameMap-objekter. Konstruktøren prøver å kjøre
+     * metoden generateMapArray() for å gjøre at GameMap-objektet
+     * inneholder en array av MapCell-objekter.
+     */
     public GameMap() {
         try {
             cellArray = generateMapArray();
@@ -15,6 +19,11 @@ public class GameMap {
         }
     }
 
+    /** Metode for å opprette et array av MapCell-objekter. Den henter inn
+     * kartdataen fra en fil kalt 'map.txt', leser av bokstaver i den filen
+     * som den sender videre til konstruktøren til MapCell-klassen, som avgjør
+     * hvilken attributter objektet skal ha basert på bokstaven den mottar.
+     */
     private MapCell[][] generateMapArray() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File("src/sample/map.txt"));
         MapCell[][] cellArray = new MapCell[27][21];
@@ -33,6 +42,8 @@ public class GameMap {
         return cellArray;
     }
 
+    /** Access-metoden for å kunne lese av MapCell-arrayet til GameMap-objektet
+     */
     public MapCell[][] accessMapArray() {
         return cellArray;
     }

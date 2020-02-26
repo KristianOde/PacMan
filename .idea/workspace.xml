@@ -55,6 +55,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -87,7 +88,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -210,30 +211,30 @@
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="425" y="346" key="FileDocumentManager.FileCacheConflict/0.0.1500.970@0.0.1500.970" timestamp="1582618551926" />
-    <state width="1480" height="172" key="GridCell.Tab.0.bottom" timestamp="1582637928921">
+    <state width="1480" height="172" key="GridCell.Tab.0.bottom" timestamp="1582712752334">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
-    <state width="1480" height="172" key="GridCell.Tab.0.bottom/0.0.1500.970@0.0.1500.970" timestamp="1582637928921" />
-    <state width="1480" height="172" key="GridCell.Tab.0.center" timestamp="1582637928921">
+    <state width="1480" height="172" key="GridCell.Tab.0.bottom/0.0.1500.970@0.0.1500.970" timestamp="1582712752334" />
+    <state width="1480" height="172" key="GridCell.Tab.0.center" timestamp="1582712752333">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
-    <state width="1480" height="172" key="GridCell.Tab.0.center/0.0.1500.970@0.0.1500.970" timestamp="1582637928921" />
-    <state width="1480" height="172" key="GridCell.Tab.0.left" timestamp="1582637928920">
+    <state width="1480" height="172" key="GridCell.Tab.0.center/0.0.1500.970@0.0.1500.970" timestamp="1582712752333" />
+    <state width="1480" height="172" key="GridCell.Tab.0.left" timestamp="1582712752333">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
-    <state width="1480" height="172" key="GridCell.Tab.0.left/0.0.1500.970@0.0.1500.970" timestamp="1582637928920" />
-    <state width="1480" height="172" key="GridCell.Tab.0.right" timestamp="1582637928921">
+    <state width="1480" height="172" key="GridCell.Tab.0.left/0.0.1500.970@0.0.1500.970" timestamp="1582712752333" />
+    <state width="1480" height="172" key="GridCell.Tab.0.right" timestamp="1582712752334">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
-    <state width="1480" height="172" key="GridCell.Tab.0.right/0.0.1500.970@0.0.1500.970" timestamp="1582637928921" />
-    <state x="269" y="120" key="SettingsEditor" timestamp="1582627439318">
+    <state width="1480" height="172" key="GridCell.Tab.0.right/0.0.1500.970@0.0.1500.970" timestamp="1582712752334" />
+    <state x="269" y="120" key="SettingsEditor" timestamp="1582712500250">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
-    <state x="269" y="120" key="SettingsEditor/0.0.1500.970@0.0.1500.970" timestamp="1582627439318" />
-    <state x="472" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1582616797781">
+    <state x="269" y="120" key="SettingsEditor/0.0.1500.970@0.0.1500.970" timestamp="1582712500250" />
+    <state x="472" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1582709796976">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
-    <state x="472" y="294" key="com.intellij.ide.util.TipDialog/0.0.1500.970@0.0.1500.970" timestamp="1582616797781" />
+    <state x="472" y="294" key="com.intellij.ide.util.TipDialog/0.0.1500.970@0.0.1500.970" timestamp="1582709796976" />
     <state x="469" y="202" width="613" height="536" key="find.popup" timestamp="1582618058998">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
