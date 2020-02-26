@@ -48,7 +48,8 @@ public class Main extends Application {
                     gPane.add(new Dot(false), j, i);
                 }
                 else if (map.accessMapArray()[i][j].getStarterArea()) {
-                    gPane.add(pacMan, j, i);
+                    pacMan.setXY(j, i);
+                    gPane.add(pacMan, pacMan.getX(), pacMan.getY());
                 }
             }
         }

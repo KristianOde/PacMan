@@ -11,4 +11,9 @@ public class PacMan extends Creature {
         setRadius(10);
         setFill(Color.YELLOW);
     }
+
+    public PacMan(int x, int y) {
+        setRadius(10); setFill(Color.YELLOW);
+        this.x = x; this.y = y;
+    }
 }
