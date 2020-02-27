@@ -5,7 +5,7 @@ import javafx.scene.shape.Circle;
 
 public class Dot extends Circle {
     private int score;
-    private double radius = 3.5;
+    private double radius = 2.5;
 
     public Dot(Boolean big) {
         if (!big) {
@@ -14,10 +14,9 @@ public class Dot extends Circle {
         }
         else {
             score = 500;
-            setRadius(radius*2);
+            setRadius(radius*1.75);
         }
-        setFill(Color.LIGHTGOLDENRODYELLOW);
-        setStroke(Color.ORANGE);
+        setFill(Color.ORANGE);
     }
 
     public int getScore() {
