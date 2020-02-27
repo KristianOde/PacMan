@@ -2,16 +2,15 @@ package sample;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.HPos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.input.KeyCode;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.shape.Shape;
 import javafx.stage.Stage;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main extends Application {
@@ -22,11 +21,13 @@ public class Main extends Application {
     Creature pacMan = new PacMan();
     int gridRows = map.accessMapArray().length;
     int gridColumns = map.accessMapArray()[0].length;
+    private ArrayList<Shape> cellArrayList;
     @Override
     public void start(Stage primaryStage) throws Exception {
         System.out.println(Arrays.deepToString(map.accessMapArray()));
         bPane.setStyle("-fx-background-color: black;");
         bPane.setCenter(pane);
+        cellArrayList = new ArrayList<>();
         initializeGame();
         System.out.println(gridRows + " " + gridColumns);
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
@@ -57,7 +58,7 @@ public class Main extends Application {
                     System.out.println(pacMan.getDirection());
                     break;
             }
-            pacMan.move();
+            checkBounds(pacMan);
         });
         Scene scene = new Scene(bPane);
         System.out.println(pacMan.getDirection());
@@ -73,10 +74,11 @@ public class Main extends Application {
         for (int i=0; i<gridRows;i++) {
             for (int j=0; j<gridColumns; j++) {
                 if (!map.accessMapArray()[i][j].getPassable()) {
-                    Wall wall = new Wall();
-                    wall.setX(j*GRIDSIZE);
-                    wall.setY(i*GRIDSIZE);
-                    pane.getChildren().add(wall);
+                    cellArrayList.add(new Wall());
+                    Wall w = (Wall) cellArrayList.get(cellArrayList.size()-1);
+                    w.setX(j*GRIDSIZE);
+                    w.setY(i*GRIDSIZE);
+                    pane.getChildren().add(w);
                 }
                 else if (map.accessMapArray()[i][j].getBigDot()) {
                     Dot bigDot = new Dot(true);
@@ -98,6 +100,19 @@ public class Main extends Application {
             }
         }
         pane.getChildren().add(pacMan);
+    }
+
+    public void checkBounds(Creature block) {
+        for (Shape static_bloc : cellArrayList) {
+            if (static_bloc != block) {
+                if (block.getBoundsInParent().intersects(static_bloc.getBoundsInParent())) {
+                    block.setDirection(null);
+                    System.out.println(block.getBoundsInParent());
+                    System.out.println(static_bloc.getBoundsInParent());
+                }
+            }
+        }
+
     }
 
     public static void main(String[] args) {
