@@ -19,6 +19,10 @@ public class Main extends Application {
     Pane pane = new Pane();
     GameMap map = new GameMap();
     Creature pacMan = new PacMan();
+    Creature inky = new Inky();
+    Creature blinky = new Blinky();
+    Creature pinky = new Pinky();
+    Creature clyde = new Clyde();
     int gridRows = map.accessMapArray().length;
     int gridColumns = map.accessMapArray()[0].length;
     private ArrayList<Shape> cellArrayList;
@@ -97,9 +101,29 @@ public class Main extends Application {
                     pacMan.setCenterX((j*GRIDSIZE)+GRIDSIZE/2);
                     pacMan.setCenterY((i*GRIDSIZE)+GRIDSIZE/2);
                 }
+                else if (map.accessMapArray()[i][j].getBStarterArea()) {
+                    inky.setXY(j, i);
+                    inky.setCenterX((j*GRIDSIZE)+GRIDSIZE/2);
+                    inky.setCenterY((i*GRIDSIZE)+GRIDSIZE/2);
+                }
+                else if (map.accessMapArray()[i][j].getPStarterArea()) {
+                    blinky.setXY(j, i);
+                    blinky.setCenterX((j*GRIDSIZE)+GRIDSIZE/2);
+                    blinky.setCenterY((i*GRIDSIZE)+GRIDSIZE/2);
+                }
+                else if (map.accessMapArray()[i][j].getIStarterArea()) {
+                    pinky.setXY(j, i);
+                    pinky.setCenterX((j*GRIDSIZE)+GRIDSIZE/2);
+                    pinky.setCenterY((i*GRIDSIZE)+GRIDSIZE/2);
+                }
+                else if (map.accessMapArray()[i][j].getCStarterArea()) {
+                    clyde.setXY(j, i);
+                    clyde.setCenterX((j*GRIDSIZE)+GRIDSIZE/2);
+                    clyde.setCenterY((i*GRIDSIZE)+GRIDSIZE/2);
+                }
             }
         }
-        pane.getChildren().add(pacMan);
+        pane.getChildren().addAll(pacMan, blinky, inky, pinky, clyde);
     }
 
     public void checkBounds(Creature block) {

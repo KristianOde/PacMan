@@ -16,8 +16,8 @@ public class Dot extends Circle {
             score = 500;
             setRadius(radius*2);
         }
-        setFill(Color.WHITE);
-        setStroke(Color.LIGHTYELLOW);
+        setFill(Color.LIGHTGOLDENRODYELLOW);
+        setStroke(Color.ORANGE);
     }
 
     public int getScore() {
