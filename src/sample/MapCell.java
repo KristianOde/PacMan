@@ -1,12 +1,13 @@
 package sample;
 
 public class MapCell {
-    private boolean passable, dot, bigDot, starterArea;
+    private boolean passable, dot, bigDot, starterArea, bStarterArea, pStarterArea, iStarterArea, cStarterArea;
     private String warpArea;
     /** Default-konstruktør for MapCell-objekter
      */
     public MapCell () {
         passable = true; dot = false; bigDot = false; starterArea = false;
+        bStarterArea = false; pStarterArea = false; iStarterArea = false; cStarterArea = false;
     }
 
     /** Konstruktør for MapCell-objekter som leser inn en String og
@@ -40,6 +41,19 @@ public class MapCell {
             case "f":
                 passable = true;
                 warpArea = "east";
+            case "b":
+                bStarterArea = true;
+                passable = true;
+            case "p":
+                pStarterArea = true;
+                passable = true;
+            case "i":
+                iStarterArea = true;
+                passable = true;
+            case "c":
+                cStarterArea = true;
+                passable = true;
+
         }
     }
 
@@ -64,6 +78,22 @@ public class MapCell {
 
     public boolean getStarterArea() {
         return starterArea;
+    }
+
+    public boolean getBStarterArea() {
+        return bStarterArea;
+    }
+
+    public boolean getPStarterArea() {
+        return pStarterArea;
+    }
+
+    public boolean getIStarterArea() {
+        return iStarterArea;
+    }
+
+    public boolean getCStarterArea() {
+        return cStarterArea;
     }
 
     public String getWarpArea() {
