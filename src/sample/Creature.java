@@ -4,7 +4,10 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.scene.shape.Arc;
 import javafx.scene.shape.Circle;
+import javafx.scene.shape.Shape;
 import javafx.util.Duration;
+
+import java.util.ArrayList;
 
 public class Creature extends Arc {
     protected int x, y;
