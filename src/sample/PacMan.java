@@ -10,8 +10,8 @@ public class PacMan extends Creature {
      */
     public PacMan() {
         setType(ArcType.ROUND);
-        setRadiusX(10);
-        setRadiusY(10);
+        setRadiusX(8.5);
+        setRadiusY(8.5);
         setStartAngle(40);
         setLength(280);
         setStroke(Color.BLACK);

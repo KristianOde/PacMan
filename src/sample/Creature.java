@@ -7,6 +7,7 @@ import javafx.scene.shape.Circle;
 import javafx.scene.shape.Shape;
 import javafx.util.Duration;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Creature extends Arc {
@@ -36,6 +37,7 @@ public class Creature extends Arc {
     public Direction getDirection() {
         return dir;
     }
+
     public void move() {
         /* Warping mechanic: if you reach the end of the map
          * you warp to the opposite side
