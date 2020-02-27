@@ -63,8 +63,8 @@ public class Main extends Application {
                     pacMan.setStartAngle(130);
                     break;
             }
+            checkBounds(pacMan);
         });
-        checkBounds(pacMan);
         Scene scene = new Scene(bPane);
         System.out.println(pacMan.getDirection());
         primaryStage.setTitle("PacMan");
@@ -139,8 +139,6 @@ public class Main extends Application {
         for (Wall static_block : wallArrayList) {
             if (block.getBoundsInParent().intersects(static_block.getBoundsInParent())) {
                 block.setDirection(null);
-                System.out.println(block.getBoundsInParent());
-                System.out.println(static_block.getBoundsInParent());
             }
         }
         for (Dot static_block : dotArrayList) {
